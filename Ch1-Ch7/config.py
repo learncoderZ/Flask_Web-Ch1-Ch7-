@@ -9,11 +9,11 @@ class Config:
     MAIL_SERVER = 'smtp.qq.com'
     MAIL_PORT = 25
     MAIL_USE_TLS = True
-    MAIL_USERNAME = '269591159@qq.com' #os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = 'vqaeoszktuwnbiih'#os.environ.get('MAIL_PASSWORD')
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
-    FLASKY_MAIL_SENDER = '269591159@qq.com'#'Flasky Admin <flasky@example.com>'
-    FLASKY_ADMIN = '992581885@qq.com'#os.environ.get('FLASKY_ADMIN')
+    FLASKY_MAIL_SENDER = 'Flasky Admin <flasky@example.com>'
+    FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
 
     @staticmethod
     def init_app(app):
